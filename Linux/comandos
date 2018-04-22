@@ -1,0 +1,17 @@
+lolcate - localizar um arquivo
+
+ps -aux | grep nomedoprocesso - localizar um processo em andamento
+
+tree - exibe o ls em forma de árvore
+
+lolcat - deixa as coisas coloridas
+
+xkill - matar um progama usando interface gráfica
+
+kill -9 pid - matar um processo pelo número
+
+mkdir - cria um diretório
+
+ ~/.bash_aliases - arquivo onde encontra-se localizado os alias do terminal
+
+ 
