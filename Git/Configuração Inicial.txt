@@ -1,0 +1,32 @@
+// Erro de Permissão: 
+
+// https://help.github.com/articles/error-permission-denied-publickey/
+// https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent
+// https://github.com/settings/keys
+
+sudo apt-get install -y ssh
+
+// Open Terminal.
+
+// Start SSH agent in the background.
+
+$ eval "$(ssh-agent -s)"
+Agent pid 59566
+
+// Find and take a note of your public key fingerprint. If you're using OpenSSH 6.7 or older:
+
+$ ssh-add -l
+2048 a0:dd:42:3c:5a:9d:e4:2a:21:52:4e:78:07:6e:c8:4d /Users/USERNAME/.ssh/id_rsa (RSA)
+
+// If you're using OpenSSH 6.8 or newer:
+
+$ ssh-add -l -E md5
+2048 MD5:a0:dd:42:3c:5a:9d:e4:2a:21:52:4e:78:07:6e:c8:4d /Users/USERNAME/.ssh/id_rsa (RSA)
+
+//In the upper-right corner of any page, click your profile photo, then click Settings. 
+
+//Authentication keysIn the user settings sidebar, click SSH and GPG keys. 
+
+//SSH key listing in GitHubCompare the list of SSH keys with the output from the ssh-add command. 
+
+
